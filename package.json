@@ -1,0 +1,22 @@
+{
+  "name": "activity-manager",
+  "version": "1.0.0",
+  "description": "An app that manages my activities",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mean",
+    "app",
+    "activity"
+  ],
+  "author": "Eduard Erlikh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.10"
+  }
+}
