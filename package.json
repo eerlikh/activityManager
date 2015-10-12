@@ -18,5 +18,14 @@
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "mongoose": "^4.1.10"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eerlikh/activityManager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eerlikh/activityManager/issues"
+  },
+  "homepage": "https://github.com/eerlikh/activityManager#readme"
 }
