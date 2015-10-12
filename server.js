@@ -3,7 +3,7 @@ var express     =     require('express'),
     mongoose    =     require('mongoose');
 
 
-mongoose.connect('mongodb://localhost/activity-manager');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/mean_blog');
 
 var Activity = require('./server/models/activity');
 
@@ -40,6 +40,8 @@ app.delete('/api/activities/:id', function(req, res){
 });
 
 //start the app
-app.listen('8080', function(){
-  console.log('...listening to you');
+
+var port = process.env.PORT || 8080;
+app.listen(port, function(){
+ console.log("... listening");
 });
