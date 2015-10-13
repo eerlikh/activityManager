@@ -22,7 +22,11 @@
 
 
     <div class="container" ng-controller="ActivityController">
-      <h2> Activity Manager </h2>
+      <div class="titleBar">
+        <h2> Activity Manager</h2>
+        <p>(drag and drop to sort)</p>
+      </div>
+
       <form class="mainForm" ng-submit="createActivity()">
         <input class="inputName col-sm-3 col-md-3 col-lg-3" type="text" ng-model="newActivity.name" placeholder="Task...">
         <input class="inputInfo col-sm-6 col-md-6 col-lg-6" type="text" ng-model="newActivity.activity" placeholder="Description...">

@@ -5,10 +5,12 @@ body {
   height: 100%;
   background-color: lightgreen;
 }
-h2 {
+.titleBar {
   font-family: 'Arimo', sans-serif;
   background-color: GreenYellow;
   padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 h3 {
   padding: 0px;
