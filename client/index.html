@@ -3,27 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Activity Manager</title>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="/js/app.js"></script>
+    <script>
+      $(function() {
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+      });
+    </script>
   </head>
   <body>
 
 
-    <div ng-controller="ActivityController" class="test">
-      <h3> test </h3>
-
-      <form ng-submit="createActivity()">
-        <input type="text" ng-model="newActivity.name" placeholder="..name">
-        <input type="text" ng-model="newActivity.activity" placeholder="..activity">
-        <input type="submit">
+    <div class="container" ng-controller="ActivityController">
+      <h2> Activity Manager </h2>
+      <form class="mainForm" ng-submit="createActivity()">
+        <input class="inputName col-sm-3 col-md-3 col-lg-3" type="text" ng-model="newActivity.name" placeholder="Task...">
+        <input class="inputInfo col-sm-6 col-md-6 col-lg-6" type="text" ng-model="newActivity.activity" placeholder="Description...">
+        <input class="mainButton" type="submit">
       </form>
 
-      <ul>
-        <li ng-repeat='activity in activities'>
-          {{ activity.name }}
-          {{ activity.activity }}
-          <button type="button" ng-click="removeActivity(activity)">Remove</button>
+      <ul id="sortable">
+        <li class="ui-state-default list-item" ng-repeat='activity in activities'>
+          <h3> {{ activity.name }} </h3>
+          <p> {{ activity.activity }} </p>
+          <button class="listButton" type="button" ng-click="removeActivity(activity)">Remove</button>
         </li>
       </ul>
     </div>

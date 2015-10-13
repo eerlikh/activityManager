@@ -1,3 +1,80 @@
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
   background-color: lightgreen;
+}
+h2 {
+  font-family: 'Arimo', sans-serif;
+  background-color: GreenYellow;
+  padding: 10px;
+}
+h3 {
+  padding: 0px;
+  marging-top: 0px;
+  marging-bottom: 0px;
+}
+ul {
+  padding: 0;
+}
+.mainForm {
+  background-color: GreenYellow;
+  padding: 10px;
+  overflow: auto;
+}
+.container {
+  height: 100%;
+  background-color: lightblue;
+}
+.list-item {
+  background-color: GreenYellow;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 0px;
+  overflow: auto;
+}
+.list-item:hover {
+  background-color: LawnGreen;
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 0px;
+  overflow: auto;
+}
+.inputName {
+  margin: 10px 0px;
+  margin-right: 10px;
+  float: left;
+}
+.inputInfo {
+  margin: 10px 0px;
+  float: left;
+}
+.mainButton {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: YellowGreen;
+  border: none;
+  float: right;
+}
+.mainButton:hover {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  border: none;
+  float: right;
+}
+.listButton {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: YellowGreen;
+  border: none;
+  float: right;
+}
+.listButton:hover {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  border: none;
+  float: right;
 }
